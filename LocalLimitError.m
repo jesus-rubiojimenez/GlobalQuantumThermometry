@@ -10,7 +10,7 @@ function [eCramerRao]=LocalLimitError(n,Tmin,Tmax)
 %
 % returns the mean logarithmic error in the limit of local prior information, 
 % as indicated by Eq.(12) of J. Rubio et al. (2020), arXiv:2011.13018. This 
-% tunrs out to be a Cramér-Rao-like quantity. 
+% turns out to be a CramÃ©r-Rao-like quantity. 
 %
 % Notes:
 %
@@ -21,7 +21,7 @@ function [eCramerRao]=LocalLimitError(n,Tmin,Tmax)
 %     with the true optimum. However, note that the specific value of this
 %     local error is meaningful only when n >> 1. 
 %
-% Jesús Rubio, PhD
+% JesÃºs Rubio, PhD
 % University of Exeter
 % J.Rubio-Jimenez@exeter.ac.uk
 % Created: Sep 2020
