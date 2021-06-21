@@ -15,7 +15,7 @@
 %   initial 'hint' at the temperature Ttrue-1. 
 %   - The units have been chosen such that T is dimensionless.
 %
-% Jesús Rubio, PhD
+% JesÃºs Rubio, PhD
 % University of Exeter
 % J.Rubio-Jimenez@exeter.ac.uk
 % Created: May 2021
@@ -131,17 +131,17 @@ end
 optErrBar=optEst.*sqrt(optErr);
 
 % Plots
-fontsize=25;
 shadedErrorBar(1:mu,optEst,optErrBar,'lineProps','b');
 hold on
 shadedErrorBar(1:mu,locEst,locErr,'lineProps','k');
 plot(1:mu,T(index_real)*ones(1,mu),'r-','LineWidth',1.5)
 hold off
+fontsize=25;
+xlabel('$\mu$','Interpreter','latex','FontSize',fontsize);
 ylabel('$k_B\tilde{\theta}(\textbf{\emph{r}})/(\hbar \omega)$','Interpreter','latex','FontSize',fontsize);
 legend('Opt. estimator, $\tilde{\vartheta}(\textbf{\emph{r}})$','Loc. estimator, $\tilde{\theta}_L(\textbf{\emph{r}})$','True temperature, $T$','Interpreter','latex','Location','southwest')
-grid
 xlim([1 mu])
 ylim([T(index_real)-1 T(index_real)+1])
-xlabel('$\mu$','Interpreter','latex','FontSize',fontsize);
 set(gca,'FontSize',fontsize,'FontName','Times')
 box on
+grid
