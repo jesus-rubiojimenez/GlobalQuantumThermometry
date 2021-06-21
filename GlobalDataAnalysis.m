@@ -25,7 +25,7 @@
 clear all
 
 % Dataset option
-dataOpt=1;
+dataOpt=2;
 
 if dataOpt==1
     % New data set
